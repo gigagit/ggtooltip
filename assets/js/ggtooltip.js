@@ -127,8 +127,9 @@
         setContent: function () {
             var $tip = this.tip(), title = this.getTitle();
 
-            $tip.find('.ggtooltip-inner').css({ 'background': this.options.backcolor, 'color': this.options.textcolor });
-            $tip.find('.ggtooltip-arrow').css('border-' + this.options.placement + '-color', this.options.backcolor );
+            $tip.find('.ggtooltip-inner').css({ 'background': this.options.backcolor, 'color': this.options.textcolor, 'border-color' : this.options.bordercolor  });
+            $tip.find('.ggtooltip-arrow').css('border-' + this.options.placement + '-color', this.options.backcolor);
+            $tip.find('.ggtooltip-arrow-shadow').css('border-' + this.options.placement + '-color', this.options.bordercolor);
             $tip.find('.ggtooltip-inner')[this.options.html ? 'html' : 'text'](title);
             $tip.removeClass('fade in top bottom left right');
         },
@@ -244,7 +245,8 @@
         delay: 0,
         html: false,
         backcolor: '#00ffcc',
-        textcolor: '#000000'
+        textcolor: '#000000',
+        bordercolor: '#0066cc'
     }
 
 
