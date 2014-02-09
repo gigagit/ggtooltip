@@ -1,7 +1,5 @@
-ggtooltip
-=========
-
 ggtooltip.js - A jQuery Tooltip Plugin v1.0
+=========
 
 jQuery Tooltip plugin built-up on Twitter Bootstrap v3.x.x
 
